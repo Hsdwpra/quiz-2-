@@ -10,6 +10,13 @@ public class KuisKantin9hafis {
         System.out.print("Jumlah porsi (0 = selesai): ");
         porsi = sc.nextInt();
         jumlahTransaksi++;
+    
+    while (porsi < 1 || porsi > 10) {
+        System.out.println("Input tidak valid");
+        System.out.print("Jumlah porsi (0 = selesai): ");
+        porsi = sc.nextInt();  
+}
+
 
         while (porsi != 0) {
             // Harga: porsi pertama Rp 15000, porsi berikutnya Rp 12000 per porsi
@@ -19,6 +26,7 @@ public class KuisKantin9hafis {
 
             System.out.print("Jumlah porsi (0 = selesai): ");
             porsi = sc.nextInt();
+           
             jumlahTransaksi++;
         }
 
